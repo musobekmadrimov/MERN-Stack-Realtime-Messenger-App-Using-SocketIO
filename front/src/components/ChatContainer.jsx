@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios";
 import { React, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
@@ -53,6 +54,7 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
         });
       });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
